@@ -24,10 +24,26 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: "Inter", sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item-card {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
 }
